@@ -109,7 +109,46 @@ function spinWithEffect(prizeId) {
         });
           // Thêm tiêu đề giải
    
-    }
+    }console.log("Danh sách số ban đầu:", allNumbers);
+console.log("Danh sách số sau khi xáo trộn:", allNumbers);
+console.log("Phân bổ số cho từng giải thưởng:", prizesNumbers);
+console.log("Trạng thái các giải thưởng:", prizes);
+console.log("Trạng thái các nút:", isSpinning, currentPrize);
+
+// ...
+
+function spinWithEffect(prizeId) {
+    console.log(`Bắt đầu quay giải ${prizeId}`);
+    // ...
+}
+
+function displayResult(prizeId, numbers) {
+    console.log(`Kết quả giải ${prizeId}:`, numbers);
+    // ...
+}
+
+// ...
+
+document.getElementById("btn-4th").addEventListener("click", () => {
+    console.log("Bấm nút Giải Tư");
+    spinWithEffect(4);
+});
+document.getElementById("btn-3rd").addEventListener("click", () => {
+    console.log("Bấm nút Giải Ba");
+    spinWithEffect(3);
+});
+document.getElementById("btn-2nd").addEventListener("click", () => {
+    console.log("Bấm nút Giải Nhì");
+    spinWithEffect(2);
+});
+document.getElementById("btn-1st").addEventListener("click", () => {
+    console.log("Bấm nút Giải Nhất");
+    spinWithEffect(1);
+});
+document.getElementById("btn-special").addEventListener("click", () => {
+    console.log("Bấm nút Giải Đặc Biệt");
+    spinWithEffect("special");
+});
 
     // Hiệu ứng quay 10 lần
     intervalId = setInterval(() => {
